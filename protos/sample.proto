@@ -1,8 +1,6 @@
 syntax = "proto3";
 option ruby_package = "Protos::SamplePB";
 
-// See https://cloud.google.com/pubsub/docs/reference/rest/v1/PubsubMessage
-
 message User {
   // 学歴
   message Education {
