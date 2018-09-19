@@ -19,6 +19,7 @@ def new_sample
   Protos::SamplePB::User.new(
     user_name: 'rerost',
     introduction: 'ジャスコから110km',
+    age: 23,
     educations: educations,
     experiences: experiences,
   )

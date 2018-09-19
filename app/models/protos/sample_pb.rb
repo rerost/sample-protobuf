@@ -7,8 +7,9 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
   add_message "User" do
     optional :user_name, :string, 1
     optional :introduction, :string, 2
-    repeated :educations, :message, 3, "User.Education"
-    repeated :experiences, :message, 4, "User.Experience"
+    optional :age, :int64, 3
+    repeated :educations, :message, 4, "User.Education"
+    repeated :experiences, :message, 5, "User.Experience"
   end
   add_message "User.Education" do
     optional :school_name, :string, 1

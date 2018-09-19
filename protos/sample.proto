@@ -11,9 +11,10 @@ message User {
   message Experience {
     string company_name = 1;
   }
-
+  
   string user_name = 1;
   string introduction = 2;
-  repeated Education educations = 3;
-  repeated Experience experiences = 4;
+  int64 age = 3;
+  repeated Education educations = 4;
+  repeated Experience experiences = 5;
 }
