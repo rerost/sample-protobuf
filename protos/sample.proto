@@ -1,0 +1,21 @@
+syntax = "proto3";
+option ruby_package = "Protos::SamplePB";
+
+// See https://cloud.google.com/pubsub/docs/reference/rest/v1/PubsubMessage
+
+message User {
+  // 学歴
+  message Education {
+    string school_name = 1;
+  }
+
+  // 職歴
+  message Experience {
+    string company_name = 1;
+  }
+
+  string user_name = 1;
+  string introduction = 2;
+  repeated Education educations = 3;
+  repeated Experience experiences = 4;
+}
